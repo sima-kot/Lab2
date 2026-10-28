@@ -2,7 +2,6 @@
 html{scroll-behavior:smooth}
 body{margin:0;padding:120px 0 0;font:16px/1.6 Georgia,serif;color:#222;background:linear-gradient(135deg,#eef2f7,#dfe7f1) fixed}
 a{color:#1d4f9c}
-/* ---- шапка: position: fixed ---- */
 .site-header{position:fixed;top:0;left:0;right:0;z-index:50;background:#fff;text-align:center;padding:8px 0;border-bottom:2px solid #2e7d32;box-shadow:0 2px 8px rgba(0,0,0,.2)}
 .site-header h1{margin:0;font:700 22px Impact,Arial,sans-serif;letter-spacing:2px}
 .site-header nav ul{list-style:none;margin:6px 0 0;padding:0;display:flex;justify-content:center;flex-wrap:wrap}
@@ -19,7 +18,7 @@ blockquote{margin:16px 0;padding:10px 18px;border-left:5px solid #2e7d32;backgro
 blockquote cite{display:block;font-size:14px;margin-top:6px}
 table{border-collapse:collapse;width:100%}
 th,td{border:1px solid #444;padding:8px;text-align:left}
-th{background:#e4eaf3}
+th{background:#e4eaf3} /* SECOND COMMIT */
 caption{caption-side:top;font-weight:700;padding:6px}
 td[colspan]{text-align:center;background:#fff8d6}
 .photos{display:flex;gap:16px;flex-wrap:wrap;justify-content:center}
@@ -27,7 +26,6 @@ td[colspan]{text-align:center;background:#fff8d6}
 .photos img{max-width:100%}
 .site-footer{background:#fff;border-top:2px solid #c62828;text-align:center;padding:16px;margin-top:30px;font:bold 13px Arial}
 .site-footer span{margin:0 14px}
-/* ---- сторінка контактів ---- */
 .intro-wrap{display:flex;gap:20px;flex-wrap:wrap}
 .intro-text{flex:1 1 420px}
 .fl-left{float:left;margin:0 14px 8px 0;border:1px solid #444;border-radius:6px}
@@ -64,12 +62,10 @@ textarea{height:140px;resize:vertical}
 .btn.gray{background:linear-gradient(#bbb,#888)}
 .social{display:flex;align-items:center;gap:10px;margin:20px 0}
 .social span{display:inline-block;width:44px;height:44px;border:2px solid #333;border-radius:50%;background:radial-gradient(#fff,#cde)}
-/* ---- модальне вікно: position: fixed ---- */
 .modal{display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,.6);z-index:100;align-items:center;justify-content:center}
 .modal:target{display:flex}
 .modal .form-box{position:relative;width:340px;background:linear-gradient(135deg,#d5ecc9,#b4d8a4);border-radius:12px;margin:0;animation:pop .4s}
 .close{position:absolute;top:6px;right:12px;font:28px Arial;text-decoration:none;color:#333}
 @keyframes pop{from{transform:scale(.5);opacity:0}to{transform:scale(1);opacity:1}}
-/* ---- стрілка вгору: завжди на екрані ---- */
 .to-top{position:fixed;right:24px;bottom:24px;width:54px;height:54px;border-radius:50%;background:linear-gradient(#4a90e2,#1d4f9c);color:#fff;font:26px/54px Arial;text-align:center;text-decoration:none;box-shadow:0 4px 10px rgba(0,0,0,.4);z-index:60;transition:.2s}
 .to-top:hover{transform:translateY(-4px)}
