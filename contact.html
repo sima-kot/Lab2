@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="uk"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Контакти</title><link rel="stylesheet" href="css/styles.css"></head><body id="top">
+<header class="site-header"><h1>ІВАН ФРАНКО</h1>
+<nav><ul>
+<li><a href="index.html#bio">Біографія</a></li>
+<li><a href="index.html#family">Родина</a></li>
+<li><a href="photo.html">Фото</a></li>
+<li><a href="index.html#dates">Дати життя</a></li>
+<li><a href="contact.html">Контакти</a></li>
+</ul></nav></header>
+<div class="wrap"><main>
+<section class="intro-wrap">
+<div class="intro-text">
+<h2 style="text-align:left">Загальна інформація</h2>
+<img class="fl-left" src="images/photo2.svg" alt="Обтікається текстом" width="90" height="60">
+<p>Цей сайт присвячено Іванові Франку — поету, письменникові й науковцю. Тут можна зареєструватися, увійти та надіслати повідомлення. Ліва й права картинки обтікаються текстом завдяки <code>float</code>.</p>
+<img class="fl-right" src="images/photo3.svg" alt="Обтікається текстом" width="90" height="60">
+<p>Загальна інформація про тему. Загальна інформація про тему. Загальна інформація про тему. Загальна інформація про тему.</p>
+<img class="fl-block" src="images/photo1.svg" alt="Не обтікається текстом" width="90" height="60">
+</div>
+<div class="stack"><img src="images/photo1.svg" alt=""><img src="images/photo2.svg" alt=""><img src="images/photo3.svg" alt=""></div>
+</section>
+
+<nav class="tabs" id="forms"><a href="#register">Форма реєстрації</a><a href="#login">Форма входу</a><a href="#feedback">Форма зворотного зв'язку</a></nav>
+
+<form class="form-box" id="register" action="#" method="post">
+<h3>Форма реєстрації</h3>
+<div class="form-grid"><div>
+<div class="avatar">&#128100;</div>
+<label for="fn">Ім'я</label><input id="fn" name="fn" placeholder="Ім'я" required minlength="2">
+<label for="ln">Прізвище</label><input id="ln" name="ln" placeholder="Прізвище" required>
+<label>Стать</label><input type="radio" id="m" name="g" value="m" checked><label class="inline" for="m">Чоловіча</label><input type="radio" id="f" name="g" value="f"><label class="inline" for="f">Жіноча</label>
+<label for="age">Вік</label><input type="number" id="age" min="1" max="120" value="21">
+<label for="bd">Дата народження</label><input type="date" id="bd" required>
+</div><div>
+<label for="c">Країна проживання</label><select id="c"><option>Оберіть країну проживання</option><option>Україна</option><option>Польща</option><option>Інша</option></select>
+<label for="ph">Номер телефону</label><input type="tel" id="ph" placeholder="+38(0XX)XXX-XX-XX" pattern="\+38\(0\d{2}\)\d{3}-\d{2}-\d{2}" required>
+<label for="sn">Соцмережа</label><input type="url" id="sn" placeholder="Посилання на соц.мережу">
+<label for="em">Електронна пошта</label><input type="email" id="em" placeholder="Ел. пошта" required>
+<label for="pw">Пароль</label><input type="password" id="pw" placeholder="Пароль" minlength="6" required>
+<p><input type="checkbox" id="ok" required> <label class="inline" for="ok">Чи згодні Ви з умовами?</label></p>
+</div></div>
+<button class="btn" type="submit">Зареєструватися</button><button class="btn gray" type="reset">Відміна</button>
+</form>
+
+<div class="modal" id="login"><form class="form-box" action="#" method="post">
+<a class="close" href="#forms">&times;</a><h3>Форма входу:</h3>
+<input type="text" placeholder="Логін" required aria-label="Логін"><br><br>
+<input type="password" placeholder="Пароль" required minlength="6" aria-label="Пароль">
+<button class="btn" type="submit">Вхід</button></form></div>
+
+<form class="form-box" id="feedback" action="#" method="post">
+<h3>Форма зворотного зв'язку:</h3>
+<div class="form-grid"><div>
+<input placeholder="Ім'я" required aria-label="Ім'я"><br><br>
+<input type="email" placeholder="Ел. пошта" required aria-label="Пошта"><br><br>
+<select aria-label="Тема"><option>Тема повідомлення</option><option>Питання</option><option>Пропозиція</option></select>
+<button class="btn" type="submit">Відправити</button></div>
+<div><textarea placeholder="Повідомлення" required aria-label="Повідомлення"></textarea></div></div>
+</form>
+
+<div class="social"><a class="btn gray" href="https://facebook.com" target="_blank" rel="noopener">Посилання на соц.мережі</a><span></span><span></span><span></span><span></span></div>
+</main></div>
+<a class="to-top" href="#top">&#9650;</a>
+<footer class="site-footer"><span>Copyright &copy; 2026</span>|<span>mob. +38 000 000-00-00</span>|<span>email: xxxx@xxxx.xxx</span>|<span>skype: xxxxxxxx</span></footer></body></html>
